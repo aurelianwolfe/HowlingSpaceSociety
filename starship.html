@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dissection: Starship | Howling Space</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #02040a; color: #e5e5e5; }
+        .mono { font-family: 'Roboto Mono', monospace; }
+        .border-glass { border: 1px solid rgba(0, 212, 255, 0.15); background: rgba(0, 212, 255, 0.03); }
+        .text-electric-blue { color: #00D4FF; }
+    </style>
+</head>
+<body>
+
+    <nav class="p-6 flex justify-between items-center border-b border-blue-500/10 bg-black">
+        <a href="index.html" class="text-xl font-bold tracking-tighter mono text-electric-blue italic">HOWLING SPACE</a>
+        <a href="index.html" class="text-xs font-bold tracking-widest uppercase hover:text-electric-blue">← Back to Hub</a>
+    </nav>
+
+    <main class="max-w-7xl mx-auto py-12 px-6">
+        <div class="mb-12">
+            <h2 class="text-4xl font-bold tracking-tighter italic text-electric-blue">ROCKET DISSECTION: STARSHIP</h2>
+            <p class="text-gray-500 mono text-xs mt-2 uppercase tracking-widest">Subject 001 // Deep Dive Analysis</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-1 border-glass p-6 rounded-lg sticky top-24 h-fit border-t-4 border-t-blue-500">
+                <img src="https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&w=600&q=80" alt="Engine Fire Blue" class="w-full opacity-80 rounded shadow-2xl filter hue-rotate-[180deg]">
+                <div class="mt-6 space-y-2 text-[10px] mono text-blue-400/60 uppercase">
+                    <p>Status: Developmental</p>
+                    <p>Propulsion: Raptor V3 / Full-Flow</p>
+                    <p>Fuel: CH4 + LOX</p>
+                </div>
+            </div>
+
+            <div class="lg:col-span-2 space-y-8">
+                <section class="border-glass p-8 rounded-lg border-l-4 border-l-blue-600">
+                    <h3 class="text-xl font-bold mb-4 mono text-white uppercase tracking-tighter">01. Raptor V3 Engine Analysis</h3>
+                    <p class="text-gray-400 leading-relaxed mb-4">The core of the propulsion system. By utilizing a full-flow staged combustion cycle, Starship maximizes the energy potential of its cryogenic propellants.</p>
+                    <div class="grid grid-cols-2 gap-4 text-xs mono text-electric-blue">
+                        <div class="bg-blue-900/10 border border-blue-500/20 p-3">THRUST: ~230 tf</div>
+                        <div class="bg-blue-900/10 border border-blue-500/20 p-3">CYCLE: FFSCC</div>
+                    </div>
+                </section>
+
+                <section class="border-glass p-8 rounded-lg border-l-4 border-l-cyan-400">
+                    <h3 class="text-xl font-bold mb-4 mono text-white uppercase tracking-tighter">02. Material Science: 304L</h3>
+                    <p class="text-gray-400 leading-relaxed mb-4">Switching from carbon fiber to stainless steel was a masterstroke in thermodynamic management. It maintains structural integrity at both cryogenic temperatures and re-entry heat.</p>
+                </section>
+
+                <section class="bg-blue-950/20 border border-blue-500/10 p-4 rounded text-center">
+                    <p class="mono text-[10px] text-blue-400 tracking-widest uppercase animate-pulse">Waiting for Telemetry Data...</p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="p-10 text-center border-t border-blue-500/10 mono text-[10px] text-gray-600 tracking-[0.3em]">
+        END OF BRIEFING // HOWLING SPACE SOCIETY
+    </footer>
+
+</body>
+</html>
