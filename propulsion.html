@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propulsion Lab | Howling Space Society</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #02040a; color: #e5e5e5; }
+        .mono { font-family: 'Roboto Mono', monospace; }
+        .border-glass { border: 1px solid rgba(0, 212, 255, 0.15); background: rgba(0, 212, 255, 0.03); }
+        .text-electric-blue { color: #00D4FF; }
+        .bg-card-gradient { background: linear-gradient(180deg, rgba(0, 212, 255, 0.05) 0%, rgba(0, 0, 0, 0) 100%); }
+    </style>
+</head>
+<body>
+
+    <nav class="p-6 flex justify-between items-center border-b border-blue-500/10 bg-black/90 backdrop-blur-md sticky top-0 z-50">
+        <a href="index.html" class="text-lg font-bold tracking-tighter mono text-electric-blue italic uppercase">HOWLING SPACE SOCIETY</a>
+        <div class="flex gap-6 text-[10px] font-bold tracking-widest uppercase">
+            <a href="index.html" class="hover:text-electric-blue">Home</a>
+            <a href="starship.html" class="hover:text-electric-blue">Rockets</a>
+            <span class="text-electric-blue border-b border-electric-blue">Propulsion</span>
+        </div>
+    </nav>
+
+    <header class="py-20 px-6 text-center border-b border-blue-500/10 bg-card-gradient">
+        <h1 class="text-4xl md:text-6xl font-black italic tracking-tighter text-white uppercase mb-4">Propulsion Lab</h1>
+        <p class="mono text-xs text-blue-400 tracking-[0.4em] uppercase">Chemical Kinetics & Energy Density Archive</p>
+    </header>
+
+    <main class="max-w-7xl mx-auto py-16 px-6">
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+            <div class="border-glass p-8 rounded-lg relative overflow-hidden group hover:border-blue-500/50 transition-all">
+                <div class="absolute top-0 right-0 p-4 mono text-[10px] text-gray-700">LV-01</div>
+                <h3 class="text-2xl font-black italic text-electric-blue mb-4">KEROLOX</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6">RP-1 (Highly refined kerosene) + LOX. The gold standard for first-stage boosters due to its high density and ease of handling.</p>
+                <div class="space-y-2 mono text-[10px]">
+                    <div class="flex justify-between border-b border-white/5 pb-1"><span>ISP (Sea Level):</span> <span class="text-white">~280s</span></div>
+                    <div class="flex justify-between border-b border-white/5 pb-1"><span>Density:</span> <span class="text-white">High</span></div>
+                    <div class="flex justify-between border-b border-white/5 pb-1"><span>Main Use:</span> <span class="text-white">Falcon 9, Atlas V</span></div>
+                </div>
+            </div>
+
+            <div class="border-glass p-8 rounded-lg relative overflow-hidden group hover:border-blue-500/50 transition-all">
+                <div class="absolute top-0 right-0 p-4 mono text-[10px] text-gray-700">LV-02</div>
+                <h3 class="text-2xl font-black italic text-electric-blue mb-4">METHALOX</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6">Liquid Methane + LOX. Ideal for reusability as it leaves zero soot in the engines. Crucial for Mars ISRU missions.</p>
+                <div class="space-y-2 mono text-[10px]">
+                    <div class="flex justify-between border-b border-white/5 pb-1"><span>ISP (Vacuum):</span> <span class="text-white">~380s</span></div>
+                    <div class="flex justify-between border-b border-white/5 pb-1"><span>Coking:</span> <span class="text-white">None</span></div>
+                    <div class="flex justify-between border-b border-white/5 pb-1"><span>Main Use:</span> <span class="text-white">Starship, Vulcan</span></div>
+                </div>
+            </div>
+
+            <div class="border-glass p-8 rounded-lg relative overflow-hidden group hover:border-blue-500/50 transition-all">
+                <div class="absolute top-0 right-0 p-4 mono text-[10px] text-gray-700">LV-03</div>
+                <h3 class="text-2xl font-black italic text-electric-blue mb-4">HYDROLOX</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6">Liquid Hydrogen + LOX. The most efficient chemical propellant. Extremely low density but incredibly high exhaust velocity.</p>
+                <div class="space-y-2 mono text-[10px]">
+                    <div class="flex justify-between border-b border-white/5 pb-1"><span>ISP (Vacuum):</span> <span class="text-white">~450s</span></div>
+                    <div class="flex justify-between border-b border-white/5 pb-1"><span>Handling:</span> <span class="text-white">Difficult (Cryo)</span></div>
+                    <div class="flex justify-between border-b border-white/5 pb-1"><span>Main Use:</span> <span class="text-white">SLS, Ariane 5</span></div>
+                </div>
+            </div>
+        </div>
+
+        <section class="border-glass p-10 rounded-lg bg-blue-900/5">
+            <h2 class="text-3xl font-black italic text-white uppercase mb-8 tracking-tighter">Oxidizer Analysis: Liquid Oxygen (LOX)</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 text-sm text-gray-400 leading-relaxed">
+                <div>
+                    <p class="mb-4">Liquid Oxygen is the standard oxidizer for nearly all modern orbital rockets. It must be kept at cryogenic temperatures ($ -183^\circ\text{C} $). When mixed with fuel in the combustion chamber, it facilitates the rapid expansion of gases required for thrust.</p>
+                    <p>In the **Howling Space Society**, we analyze the molecular mass of exhaust products to determine the efficiency of the burn.</p>
+                </div>
+                <div class="mono bg-black/50 p-6 border border-blue-500/20 rounded">
+                    <p class="text-electric-blue mb-4 uppercase tracking-widest">[ Chemical Equation: Methalox ]</p>
+                    <p class="text-white text-lg">CH₄ + 2O₂ → CO₂ + 2H₂O + Energy</p>
+                    <p class="mt-4 text-[10px] text-gray-500 italic">// Note: This reaction produces clean water vapor and carbon dioxide, allowing for immediate engine re-ignition without cleaning.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="p-10 text-center border-t border-blue-500/10 mono text-[9px] text-gray-600 tracking-[0.4em]">
+        © 2026 HOWLING SPACE SOCIETY // LABORATORY DIVISION
+    </footer>
+
+</body>
+</html>
